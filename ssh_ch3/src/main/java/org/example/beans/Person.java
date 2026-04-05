@@ -1,7 +1,9 @@
-package org.example;
+package org.example.beans;
 
-public class Cat {
+public class Person {
+
     private String name;
+    private Cat cat;
 
     public String getName() {
         return name;
@@ -11,10 +13,19 @@ public class Cat {
         this.name = name;
     }
 
+    public Cat getCat() {
+        return cat;
+    }
+
+    public void setCat(Cat cat) {
+        this.cat = cat;
+    }
+
     @Override
     public String toString() {
-        return "Cat{" +
+        return "Person{" +
                 "name='" + name + '\'' +
+                ", cat=" + cat +
                 '}';
     }
 }
