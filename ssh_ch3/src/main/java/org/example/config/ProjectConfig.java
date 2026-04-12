@@ -19,19 +19,13 @@ public class ProjectConfig {
         return c;
     }
 
-    //    @Bean
-//    Person person() {
-//        Person p = new Person();
-//        p.setName("Belal");
-//        p.setCat(cat());
-//        return p;
-//    }
+
     @Bean
-    Person person(Cat c) {
-        Person p = new Person();
-        p.setName("Belal");
-        p.setCat(c);
-        return p;
+    Person person(Cat cat){
+        Person person = new Person();
+        person.setName("Ahmed");
+        person.setCat(cat);
+        return person;
     }
 
 

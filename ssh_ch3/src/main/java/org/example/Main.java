@@ -14,7 +14,7 @@ public class Main {
 
         Person p = context.getBean(Person.class);
         Cat c = context.getBean(Cat.class);
-        System.out.println(p);
+        System.out.println(p.getCat());
         System.out.println(p.getCat() == c); // true
     }
 }
